@@ -14,6 +14,6 @@
 
 No, a custom element name (web component) cannot be a single word like <user>. According to the HTML specification, custom element names must contain a hyphen (e.g., <my-user>, <user-profile>). This prevents conflicts with existing and future standard HTML elements.
 
-# Q. Can `<my-counter></my-counter>` be written as `<my-counter />` ?
+## Q. Can `<my-counter></my-counter>` be written as `<my-counter />` ?
 
 No.
