@@ -7,7 +7,7 @@
 - **Lit (from Google) - Library used in this project**
   - ❤️ Lit Library for Web Components from Google: [Click here](https://lit.dev/docs/getting-started/)
     - Interesting Article: [Click here](https://goauthentik.io/blog/2023-05-04-i-gambled-against-react-and-lost/#3-reasons-i-chose-lit-over-react)
-  - Should i use any library for using web components? TLDR; Use `Lit` 🔥
+  - Should i use any library for using web components? TLDR; Use `Lit` 🔥 ([source](https://chatgpt.com/c/68d16317-f0dc-8329-9329-4ac67f068cbb))
 - Download frontendmasters.com Courses: [Click here](https://frontendmasters.com/courses/web-components/introduction/)
 
 ## Q. Can a compoent name be one word like <user> ?
