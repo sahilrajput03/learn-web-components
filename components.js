@@ -5,8 +5,8 @@ export class SimpleGreeting extends LitElement { // & Component
   constructor() {
     super();
     // ❤️Learn: `this.name` is undefined here even when passed to
-    //    component because properties are not yet initialized thus they
-    //    are `undefined` here.
+    //          component because properties are not yet initialized thus they
+    //          are `undefined` here.
     // console.log('this.name?', this.name) // undefined
 
     // ❤️Learn: Setting default value of property (s) go here:
@@ -17,8 +17,8 @@ export class SimpleGreeting extends LitElement { // & Component
   }
 
   // ❤️Learn: Define reactive property (s) for your LitElement
-  //      component. Updating `this.name` and `this.color` will trigger
-  //      rerender.
+  //            component. Updating `this.name` and `this.color` will trigger
+  //            rerender.
   static properties = {
     name: { type: String },
     color: { type: String },
