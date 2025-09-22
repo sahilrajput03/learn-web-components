@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-  <script type="module" src="./simple-greeting.js"></script>
+  <script type="module" src="./components.js"></script>
 </head>
 
 <body>
-  <simple-greeting name="world"></simple-greeting>
+  <p style="text-decoration: underline;">Web Components</p>
+  <simple-greeting name="world" color="purple"></simple-greeting>
   <!-- Output: Hello, world! -->
 
-  <simple-greeting></simple-greeting>
+  <simple-greeting color="orange"></simple-greeting>
   <!-- Output: Hello, somebody! -->
+
+
+  <counter></counter>
+
 </body>
