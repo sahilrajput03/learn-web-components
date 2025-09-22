@@ -1,6 +1,6 @@
 # Learn Web Components
 
-🚀🚀 Deployed at https://sahilrajput03.github.io/learn-web-components
+🚀🚀 Deployed at https://sahilrajput03.github.io/learn-web-components (via Github Pages)
 
 Library Used - Lit (from Google)
 
