@@ -1,19 +1,21 @@
 // @ts-nocheck
 import { LitElement, css, html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
 
+// ❤️Learn: `this.constructor.name` prints the name of its class in below code.
+
 export class SimpleGreeting extends LitElement { // & Component
   constructor() {
     super();
     // ❤️Learn: `this.name` is undefined here even when passed to
     //          component because properties are not yet initialized thus they
     //          are `undefined` here.
-    // console.log('this.name?', this.name) // undefined
+    // console.log(this.constructor.name, 'this.name?', this.name) // undefined
 
     // ❤️Learn: Setting default value of property (s) go here:
     this.name = 'somebody';
 
     // Learn: `this` Prints the instance of the component being created
-    // console.log('`this` in SimpleGreeting component?', this); 
+    // console.log(this.constructor.name, '`this` in SimpleGreeting component?', this); 
   }
 
   // ❤️Learn: Define reactive property (s) for your LitElement
@@ -75,9 +77,9 @@ export class UserProfile extends LitElement {
 
   // This lifecycle method (of LitElement) is run after `firstUpdated`
   updated(changedProperties) {
-    console.log('updated - changedProperties?', changedProperties); // { 'age': previousValueHere }
-    console.log('updated - changedProperties.get(`age`) ?', changedProperties.get('age')); // Prints previous age value
-    console.log('this.age?', this.age); // Prints updated age value
+    console.log(this.constructor.name, 'updated - changedProperties?', changedProperties); // { 'age': previousValueHere }
+    console.log(this.constructor.name, 'updated - changedProperties.get(`age`) ?', changedProperties.get('age')); // Prints previous age value
+    console.log(this.constructor.name, 'updated', 'this.age?', this.age); // Prints updated age value
   }
 
   static get styles() {
