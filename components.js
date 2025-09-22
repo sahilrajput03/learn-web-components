@@ -30,7 +30,7 @@ export class SimpleGreeting extends LitElement { // & Component
 }
 customElements.define('simple-greeting', SimpleGreeting);
 
-export class Counter extends LitElement { // & Component
+export class SimpleCounter extends LitElement { // & Component
   constructor() {
     super();
     this.count = 0; // set initial value of `count`
@@ -41,8 +41,8 @@ export class Counter extends LitElement { // & Component
   increment() { this.count++; }
 
   updated(changedProperties) {
-    console.log('updated - changedProperties.get(`count`)?', changedProperties.get('count')); // Prints previous count value
-    console.log('updated - this.count', this.count); // Prints updated count value
+    console.log(this.constructor.name, 'updated - changedProperties.get(`count`)?', changedProperties.get('count')); // Prints previous count value
+    console.log(this.constructor.name, 'updated - this.count', this.count); // Prints updated count value
   }
 
   static get styles() { return css`button { color: pink; background: black; }`; }
@@ -51,7 +51,7 @@ export class Counter extends LitElement { // & Component
     return html`<button @click="${this.increment}">${this.count}</button>`;
   }
 }
-customElements.define('my-counter', Counter);
+customElements.define('simple-counter', SimpleCounter);
 
 export class UserProfile extends LitElement {
   constructor() {
@@ -97,10 +97,11 @@ export class UserProfile extends LitElement {
 
   render() {
     return html`
-   <div class="container"> 
-    <div>Name: ${this.name}</div>
-    <button @click="${this.increment}">Age: ${this.age}</button>
-    <div>Gender: ${this.gender}</div>
+      <div class="container"> 
+        <div>Name: ${this.name}</div>
+        <button @click="${this.increment}">Age: ${this.age}</button>
+        <div>Gender: ${this.gender}</div>
+      <div>
     `;
   }
 }
